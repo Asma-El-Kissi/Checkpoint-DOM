@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="style6.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="color: cornflowerblue;;">Welcome to your on line computer store</h1>
+        <div id="alerts"></div>
+        <div class="productcont">
+            <div class="product">
+                <h3 class="productname">Product 1 <i id="like-button" class="fa fa-2x fa-heart-o not-liked"></i></h3>
+                <img src="/produits/produit 1.JPG" height="120px">
+                <p>PC PORTABLE GAMER ASUS F571 I5 9É GÉN 16GO 512GO SSD </p>
+                <p class="price">DT 2499</p>
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"> -
+                </button>
+                <input class="quantity" min="0" name="quantity" value="0" type="number" width="10">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"> + </button>
+                <button class="delete">Delete</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Product 2 <i id="like-button" class="fa fa-2x fa-heart-o not-liked"></i></h3>
+                <img src="/produits/produit 2.JPG" height="120px">
+                <p>SMARTPHONE SAMSUNG GALAXY A72 - BLEU + ABONNEMENT IPTV 1AN</p>
+                <p class="price">DT 1649</p>
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"> -
+                </button>
+                <input class="quantity" min="0" name="quantity" value="0" type="number" width="10">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"> + </button>
+                <button class="delete">Delete</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Product 3 <i id="like-button" class="fa fa-2x fa-heart-o not-liked"></i></h3>
+                <img src="/produits/produit 3.JPG" height="120px">
+                <p>TÉLÉVISEUR TOSHIBA 43" FULL HD - NOIR (43S2850)</p>
+                <p class="price">DT 939</p>
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"> -
+                </button>
+                <input class="quantity" min="0" name="quantity" value="0" type="number" width="10">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"> + </button>
+                <button class="delete">Delete</button>
+            </div>
+        </div>
+        <div class="cart-container">
+            <h2>Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th><strong>Product</strong></th>
+                        <th><strong>Price</strong></th>
+                    </tr>
+                </thead>
+                <tbody id="carttable">
+                </tbody>
+            </table>
+            <hr>
+            <table id="carttotals">
+                <tr>
+                    <td><strong>Items</strong></td>
+                    <td><strong>Total</strong></td>
+                </tr>
+                <tr>
+                    <td>x <span id="itemsquantity">0</span></td>
+
+                    <td>DT <span id="total">0</span></td>
+                </tr>
+            </table>
+            <div class="cart-buttons">
+                <button id="emptycart">Empty Cart</button>
+                <button id="checkout">Checkout</button>
+            </div>
+        </div>
+        <!-- link to java script file -->
+        <script src="script6.js"></script>
+</body>
+</div>
